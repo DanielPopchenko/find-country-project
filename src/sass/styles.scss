@@ -7,12 +7,34 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+h1,
+h2,
+h3 {
   font-size: 47px;
   text-align: center;
+}
+
+h3 {
+  font-size: 40px;
+  margin-top: 25px;
+}
+
+.project-name {
+  margin-top: 25px;
+  background: #ff0000;
+  background: linear-gradient(to left, #ff0000 10%, #ffff00 60%, #ff0000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.name {
+  background: #ffff00;
+  background: linear-gradient(to left, #ffff00 0%, #05c1ff 50%, #ffff00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .js-input {
@@ -30,4 +52,33 @@ h1 {
   border: 1px solid #bdbdbd;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.img-container {
+  display: inline-block;
+  text-align: center;
+  width: 400px;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  width: 100%;
+  border: 2px solid black;
+}
+
+.item {
+  display: block;
+  text-align: center;
+}
+
+.population {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.capital {
+  font-size: 30px;
+  margin-bottom: 20px;
 }

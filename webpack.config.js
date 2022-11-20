@@ -18,8 +18,12 @@ module.exports = {
       { test: /\.m?js$/, exclude: /node_modules/, use: 'babel-loader' },
       // Бери файлы css и используй для них css-loader
       {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
+      },
+      {
         test: /\.s[ac]ss$/i,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
